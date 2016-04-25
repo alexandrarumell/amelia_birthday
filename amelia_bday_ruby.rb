@@ -1,3 +1,17 @@
+source "https://rubygems.org"
+
+group :development, :test do
+  gem "heroku_hatchet"
+  gem "rspec-core"
+  gem "rspec-expectations"
+  gem "excon"
+  gem "rake"
+  gem "parallel_tests"
+  gem 'rspec-retry'
+  gem "netrc"
+  gem "git", github: "alexandrarumell", branch: "amelia_birthday"
+end
+
 def value
 	puts "Write Something!"
 	array = gets.chomp
@@ -7,8 +21,8 @@ def value
 	if array_3_2 == 061
 		puts "You entered 1"
 		1 = color_value
-		end
 	end
+end
 
 value()
 
